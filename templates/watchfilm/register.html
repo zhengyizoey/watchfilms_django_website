@@ -1,0 +1,15 @@
+{% extends 'watchfilm/base.html' %}
+{% block body %}
+
+    {% if registered %}
+        <p>已经登陆啦<a href="{% url 'index' %}">首页</a> </p>
+    {% else %}
+        <form method="post" action="{% url 'register' %}" >
+        {% csrf_token %}
+        {{ userform.as_p }}
+        {{ userprofileform.as_p }}
+        <input type="submit" value="submit">
+        </form>
+    {% endif %}
+
+{% endblock %}

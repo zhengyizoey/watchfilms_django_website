@@ -1,0 +1,12 @@
+{% extends 'watchfilm/base.html' %}
+{% block title %}登陆watchfilm{% endblock %}
+{% block body %}
+
+    <form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    用户名或邮箱：<input type="text" name="username" >
+    密码：<input type="password" name="password" >
+    <input type="submit" value="提交">
+    </form>
+{% endblock %}
+<p>fjhgjg</p>
