@@ -1,0 +1,21 @@
+<nav>
+    <ul class="pagination">
+
+        {% if current_page == 1 %}
+            <li class="disabled"><a href="{% url 'index' %}">首页</a> </li>
+            <li class="disabled"  ><a href="">上一页</a> </li>
+        {% elif page_list.has_previous %}
+            <li ><a href="{% url 'index' %}">首页</a> </li>
+            <li ><a href="?page={{ page_list.previous_page_number }}">上一页</a> </li>
+        {% endif %}
+
+        {% for page in pages %}
+            <li{% if page == current_page %} class="active"{% endif %}><a href="?page={{ page }}">{{ page }}</a> </li>
+        {% endfor %}
+
+        {% if page_list.has_next %}
+            <li><a href="?page={{ page_list.next_page_number }}">下一页</a> </li>
+        {% endif %}
+
+    </ul>
+</nav>
