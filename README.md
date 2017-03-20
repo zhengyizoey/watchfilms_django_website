@@ -5,4 +5,4 @@
    
  - 前端
    - 使用bootstrap搭建,长这样：
-   - ![首页](https://github.com/zhengyizoey/watchfilms_django_website/blob/master/watchfilm.png)
+    ![首页](https://github.com/zhengyizoey/watchfilms_django_website/blob/master/watchfilm.png)
