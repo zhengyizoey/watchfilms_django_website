@@ -1,9 +1,8 @@
-#### 用抓来的豆瓣电影数据，做一个web展示
+#### 看电影
  - 功能
-   - 实现登陆注册
-   - 可以筛选、搜索电影
-   - 可以将电影标记为【看过了】【加入观影单】
-   - 登陆用户有自己的观影主页：可以查看创建的最近要看的观影单，查看自己的看过的电影列表
- - 实现
-   - 使用django搭建
-   - 数据来自另一个爬虫程序
+   - 介绍：使用django搭建，用于展示电影信息（电影信息来自另一个(豆瓣爬虫)[https://github.com/zhengyizoey/doubanmovie_spider]），用户可以标记看过的电影，添加或创建个人的观影单，没周五会随机推荐5个优质电影给选择困难症用户~
+   - 实现功能：登陆注册，电影搜索分类
+   
+ - 前端
+   - 使用bootstrap搭建
+   - ![首页](https://github.com/zhengyizoey/watchfilms_django_website/blob/master/watchfilm.png)
